@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 车迷调查问卷</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+    <h1 id="title">F1 车迷调查问卷</h1>
+    <p id="description">谢谢您抽空参与此次调查问卷</p>
+    <form action="https://formspree.io/f/xbjwqvae" method="POST" id="survey-form">
+        <fieldset>
+            <label id="name-label">您的姓名：<input type="text" name="name" id="name" placeholder="在此输入您的姓名。。。"
+                    required /></label>
+
+            <label id="email-label">您的邮件地址：<input type="email" name="email" id="email" placeholder="在此输入您的邮件地址。。。"
+                    required /></label>
+
+            <label id="number-label">您的年龄：<input type="number" name="age" id="number" min="10" max="99"
+                    placeholder="在此输入您的年龄。。。" /></label>
+
+            <label>您支持或最常关注哪一只车队？
+                <select name="fan" id="dropdown" required>
+                    <option value="">(请选择一项)</option>
+                    <option value="梅奔">梅赛德斯奔驰车队</option>
+                    <option value="法拉利">法拉利车队</option>
+                    <option value="大牛">红牛一队</option>
+                    <option value="小牛">红牛二队</option>
+                    <option value="迈队">迈凯轮车队</option>
+                    <option value="阿尔法">阿尔法罗密欧车队</option>
+                    <option value="哈斯">哈斯车队</option>
+                    <option value="其他">其他车队</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>您观看 F1 比赛的习惯是什么？</legend>
+            <label><input type="radio" name="watch-type" value="每场都看"  class="inline" />每场练习赛、排位赛、正赛都会看</label>
+            <label><input type="radio" name="watch-type" value="只看每场排位赛和正赛"  class="inline" />只看每场排位赛和正赛</label>
+            <label><input type="radio" name="watch-type" value="只看排位冲刺赛和比赛日正赛"  class="inline" />只看排位冲刺赛和比赛日正赛</label>
+            <label><input type="radio" name="watch-type" value="只看正赛"  class="inline" />只看正赛</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>您通常从哪种渠道关注 F1 信息或收看 F1 比赛</legend>
+            <label><input type="checkbox" name="watch" value="五星体育"  class="inline" />五星体育</label>
+            <label><input type="checkbox" name="watch" value="腾讯体育"  class="inline" />腾讯体育</label>
+            <label><input type="checkbox" name="watch" value="CCTV5"  class="inline" />中央5台</label>
+            <label><input type="checkbox" name="watch" value="B站"  class="inline" />B站</label>
+            <label><input type="checkbox" name="watch" value="其他"  class="inline" />其他自媒体平台</label>
+        </fieldset>
+        <fieldset>
+            <label>
+                Netflix 的 Drive to Survive 系列纪录片已经播出 4 季，您对此系列纪录片的喜爱程度如何，有什么意见或建议吗？
+                <textarea id="comments" name="message" placeholder="请在此输入您的意见和建议。。。" required></textarea>
+            </label>
+        </fieldset>
+        <button type="submit" id="submit">提交表单</button>
+    </form>
+</body>
+
+</html>
