@@ -4,6 +4,7 @@ body {
 }
 
 h1,
+h3,
 footer {
     margin: 1em;
     text-align: center;
@@ -14,18 +15,7 @@ h1 {
     font-size: 3em;
 }
 
-.container {
-    display: flex;
-}
-
-.container__sidebar {
-    width: 35%;
-}
-
-.container__main {
-    /* Take the remaining width */
-    flex: 1;
-
-    /* Make it scrollable */
-    overflow: auto;
+main {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
 }
