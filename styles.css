@@ -103,6 +103,14 @@ main {
 }
 
 @media (max-width: 768px) {
+    .nav-bar {
+        height: 120px;
+    }
+
+    .card {
+        margin: 60px auto;
+    }
+
     body {
         display: block;
     }
@@ -113,5 +121,10 @@ main {
 
     .content {
         display: block;
+    }
+
+    img {
+        max-width: 300px;
+        max-height: 300px;
     }
 }
